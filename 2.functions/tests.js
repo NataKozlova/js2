@@ -1,3 +1,19 @@
+function testCase() {
+  const a = 1;
+  const b = -3;
+  const c = 2;
+
+  const solutions = solveEquation(a, b, c);
+  if (solutions[0] === 2 && solutions[1] === 1) {
+    console.log("Тест пройден");
+  } else {
+    console.log("Тест не пройден");
+  }
+}
+
+testCase();
+
+
 describe("Домашнее задание к занятию 2 Функции", () => {
   describe("Задача №1 Исследовать массив", () => {
     it("[-99, 99, 10] => { min: -99, max: 99, avg: 3.33 }", () => {
