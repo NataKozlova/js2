@@ -7,7 +7,7 @@ function summElementsWorker(secondArray) {
 }
 
 let secondArray = [3, 5, 22, 56, 87, 43, 1, 0];
-/*console.log(summElementsWorker(secondArray));*/
+/*console.log(sumElementsWorker(secondArray));*/
 
 function differenceMaxMinWorker(secondArray) {
 	let max = Math.max(...secondArray);
@@ -26,13 +26,13 @@ function differenceEvenOddWorker(secondArray) {
 		} else oddElement.push(secondArray[i]);
 
 	}
-	let sumEvenElement = evenElement.reduce((accumulator, currentValue) => {
+	let summEvenElement = evenElement.reduce((accumulator, currentValue) => {
 		return accumulator + currentValue;
 	}, 0);
-	let sumOddElement = oddElement.reduce((accumulator, currentValue) => {
+	let summOddElement = oddElement.reduce((accumulator, currentValue) => {
 		return accumulator + currentValue;
 	}, 0);
-	let minus = sumEvenElement - sumOddElement;
+	let minus = summEvenElement - sumOddElement;
 
 	return minus;
 }
@@ -73,7 +73,7 @@ const arr = [
 	[72, 75, 51, 87, 43],
 	[30, 41, 55, 96, 62]
 ];
-console.log(makeWork(arr, summElementsWorker)); // максимум из 61, 206, 328, 284 => 328
+console.log(makeWork(arr, sumElementsWorker)); // максимум из 61, 206, 328, 284 => 328
 console.log(makeWork(arr, differenceMaxMinWorker)); // максимум из 10, 86, 44, 66 => 86
 console.log(makeWork(arr, differenceEvenOddWorker)); // максимум из 39, -6, -184, 92 => 92
 console.log(makeWork(arr, averageEvenElementsWorker)); // максимум из 12.5, 33.333, 72, 62.666 => 72
