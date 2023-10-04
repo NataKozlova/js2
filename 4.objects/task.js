@@ -39,7 +39,4 @@ let student3 = new Student('Ivan', 'male', 19);
 student3.setSubject('Literature');
 student3.addMarks(5, 4, 5);
 console.log(student1.getAverage());
-this.setSubject = function(subjectName) {
-	this.subject = subjectName;
-};
 console.log(student3);
